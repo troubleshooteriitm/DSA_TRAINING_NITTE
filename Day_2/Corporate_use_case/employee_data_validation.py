@@ -1,31 +1,25 @@
 
-def validate_employee_data(employee:dict):
-
+def validate_employee_data(employee):
+	"""
+	Validates employee data dictionary.
+	Required fields: name (str), employee_id (str/int), email (str), age (int)
+	Returns: (bool, list of error messages)
+	"""
 	import re
 	errors = []
-
 	# Name validation
-
 	name = employee.get('name', '').strip()
 	if not name:
 		errors.append('Name is required.')
-
-
 	# Employee ID validation
-
 	emp_id = employee.get('employee_id')
 	if not emp_id or (isinstance(emp_id, str) and not emp_id.strip()):
-		# if emp_id is empty
 		errors.append('Employee ID is required.')
-
-
 	# Email validation
 	email = employee.get('email', '').strip()
 	email_pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
 	if not email or not re.match(email_pattern, email):
 		errors.append('Valid email is required.')
-
-
 	# Age validation
 	age = employee.get('age')
 	try:
