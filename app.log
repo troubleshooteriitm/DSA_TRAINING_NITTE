@@ -1,0 +1,6 @@
+root - DEBUG -  2026-06-05 09:39:28,270 -  log_to_file.py - 10 - <module>  - This is a debug message
+root - INFO -  2026-06-05 09:39:28,272 -  log_to_file.py - 11 - <module>  - This is an info message
+root - WARNING -  2026-06-05 09:39:28,272 -  log_to_file.py - 12 - <module>  - This is a warning message
+root - DEBUG -  2026-06-05 09:39:48,132 -  log_to_file.py - 10 - <module>  - This is a debug message
+root - INFO -  2026-06-05 09:39:48,132 -  log_to_file.py - 11 - <module>  - This is an info message
+root - WARNING -  2026-06-05 09:39:48,132 -  log_to_file.py - 12 - <module>  - This is a warning message
